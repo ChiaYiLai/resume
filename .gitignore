@@ -1,0 +1,19 @@
+.DS_Store# macOS 系統檔
+.DS_Store
+
+# node 專案相關（如果你之後用 Vite、Hono、npm...）
+node_modules/
+dist/
+.env
+.env.*.local
+
+# VSCode 設定
+.vscode/
+
+# 打包暫存
+*.log
+*.tmp
+
+# OS 雜項
+Thumbs.db
+ehthumbs.db
