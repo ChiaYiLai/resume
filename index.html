@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
+    <main>
       <img
         src="img/avatar.png"
         alt="Chia Yi Lai"
@@ -47,7 +47,7 @@
         width="300"
         height="450"
       />
-      <section class="section-main">
+      <article>
         <header>
           <h1>
             <em>嗨！我是</em>
@@ -55,7 +55,7 @@
             <span>/</span>
             <b>Alvin</b>
           </h1>
-          <h2 class="subtitle">個人工作接案 × 網頁軟體工程設計</h2>
+          <h2>個人工作接案 × 網頁軟體工程設計</h2>
         </header>
         <section>
           <h3>服務項目</h3>
@@ -119,12 +119,17 @@
                   height="36"
                   border="0"
                   target="_blank"
-                  style="position: relative; top: 12px"
+                  class="btn-line"
               /></a>
             </li>
           </ul>
         </footer>
-      </section>
+      </article>
     </main>
+    <button type="button" id="btn-theme-toggle">
+      <span>Light</span>
+      <b>Dark</b>
+    </button>
+    <script src="main.js"></script>
   </body>
 </html>
