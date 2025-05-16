@@ -4,13 +4,15 @@
   --gray: #666;
   --white: #fff;
   --blue: #159;
+  --yellow: #ffd54f;
   --color: var(--gray);
   --bg: #f9f8f4;
   --main: var(--red);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ::selection {
-  background: #ffd54f;
+  background: var(--yellow);
   color: #000;
 }
 
@@ -19,7 +21,7 @@
   --main: var(--blue);
   @media (width < 1024px) {
     --color: var(--white);
-    --main: #fc4;
+    --main: var(--yellow);
   }
   @media (width >= 1024px) {
     #avatar {
@@ -31,7 +33,7 @@
     article {
       padding: 4rem;
       background-color: #f4f4f4;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--shadow);
     }
   }
 }
@@ -68,7 +70,7 @@ main {
   display: block;
   padding: 0.5rem;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
   transition: 0.8s;
   position: relative;
   left: 0;
@@ -99,7 +101,7 @@ h1 {
   font-weight: 400;
   margin: 0;
   @media (width < 1024px) {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   b {
     font-weight: 400;
@@ -111,9 +113,9 @@ h1 {
   }
   span {
     font-size: 1.5rem;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     position: relative;
-    top: -4px;
+    top: -2px;
     color: #ccc;
   }
 }
@@ -124,8 +126,13 @@ h2 {
   color: var(--main);
   border: 1px solid var(--main);
   padding: 12px 36px;
-  margin: 0.5rem 0 2rem 0;
+  margin: 1rem 0 2rem;
   border-radius: 100px;
+  white-space: nowrap;
+  span {
+    opacity: 0.4;
+    margin: 0 0.25rem;
+  }
 }
 
 h3 {
