@@ -148,7 +148,8 @@ h3 {
 a {
   color: var(--color);
   transition: 0.4s;
-  text-underline-offset: 6px;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 0.5px;
   &:hover {
     color: var(--main);
   }
