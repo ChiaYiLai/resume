@@ -20,9 +20,6 @@
   @media (width < 1024px) {
     --color: var(--white);
     --main: #fc4;
-    h1 {
-      font-size: 2rem;
-    }
   }
   @media (width >= 1024px) {
     #avatar {
@@ -101,6 +98,9 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
   margin: 0;
+  @media (width < 1024px) {
+    font-size: 2rem;
+  }
   b {
     font-weight: 400;
   }
