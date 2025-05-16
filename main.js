@@ -1,11 +1,14 @@
-const btn = document.getElementById("btn-theme-toggle");
-const root = document.documentElement;
+const avatar = document.getElementById('avatar')
+const htmlElement = document.documentElement
 
-const isDark = localStorage.getItem("isdark");
-root.setAttribute("data-isdark", isDark);
+const localIsDark = localStorage.getItem('isdark')
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+const isDark = localIsDark !== null ? localIsDark === 'true' : prefersDark
+htmlElement.setAttribute('data-isdark', isDark)
 
-btn.addEventListener("click", () => {
-  const isDark = root.getAttribute("data-isdark") === "true";
-  root.setAttribute("data-isdark", !isDark);
-  localStorage.setItem("isdark", !isDark);
-});
+avatar.addEventListener('click', e => {
+  e.preventDefault()
+  const isDark = htmlElement.getAttribute('data-isdark') === 'true'
+  htmlElement.setAttribute('data-isdark', !isDark)
+  localStorage.setItem('isdark', !isDark)
+})

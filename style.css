@@ -4,7 +4,7 @@
   --gray: #666;
   --white: #fff;
   --color: var(--gray);
-  --bg: #f4f4f4;
+  --bg: #f9f8f4;
 }
 
 ::selection {
@@ -12,15 +12,22 @@
   color: #000;
 }
 
-[data-isdark="true"] {
-  --color: var(--white);
+[data-isdark='true'] {
   --bg: #333;
-  #btn-theme-toggle {
-    span {
-      display: none;
+  @media (width < 1024px) {
+    --color: var(--white);
+  }
+  @media (width >= 1024px) {
+    #avatar {
+      rotate: -10deg;
+      top: 90px;
+      left: 108px;
+      z-index: 1;
     }
-    b {
-      display: inline;
+    article {
+      padding: 4rem;
+      background-color: #f4f4f4;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -32,10 +39,9 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem 2rem 4rem;
-  font-family: "Maven Pro", sans-serif;
+  padding: 3rem 2rem 6rem;
+  font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--bg);
   color: var(--color);
   display: flex;
   justify-content: center;
@@ -43,6 +49,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   transition: 0.8s;
+  background-color: var(--bg);
 }
 
 main {
@@ -53,12 +60,25 @@ main {
   gap: 3rem;
 }
 
-.avatar {
-  width: 300px;
-  margin-bottom: 1rem;
+#avatar {
+  display: block;
   padding: 0.5rem;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.8s;
+  position: relative;
+  left: 0;
+  top: 0;
+  img {
+    width: 300px;
+    display: block;
+  }
+}
+
+article {
+  transition: 0.8s;
+  position: relative;
+  z-index: 2;
 }
 
 section {
@@ -93,7 +113,7 @@ h2 {
   color: rgb(var(--red));
   border: 1px solid rgba(var(--red), 0.5);
   background-color: #fce9c9;
-  padding: 12px 24px;
+  padding: 12px 48px;
   border-radius: 100px;
 }
 
@@ -125,19 +145,4 @@ ul {
   position: relative;
   top: 12px;
   border-radius: 100px;
-}
-
-#btn-theme-toggle {
-  border-radius: 100px;
-  border: 1px solid var(--color);
-  color: var(--color);
-  font-size: 12px;
-  padding: 4px 12px;
-  background-color: transparent;
-  position: fixed;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  b {
-    display: none;
-  }
 }

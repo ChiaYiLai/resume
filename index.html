@@ -2,18 +2,19 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
     <title>Chia Yi Lai Resume</title>
-    <meta property="og:title" content="Chia Yi Lai Resume" />
-    <meta property="og:description" content="Chia Yi Lai 服務項目與聯絡方式" />
-    <meta
-      property="og:image"
-      content="https://chiayilai.github.io/resume/img/avatar.png"
-    />
-    <meta property="og:url" content="https://chiayilai.github.io/resume/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="description" content="Chia Yi Lai 服務項目與聯絡方式" />
+    <meta property="og:title" content="Chia Yi Lai Resume" />
+    <meta property="og:description" content="Chia Yi Lai 服務項目與聯絡方式" />
+    <meta property="og:image" content="https://chiayilai.github.io/resume/img/avatar.png" />
+    <meta property="og:url" content="https://chiayilai.github.io/resume/" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" />
+    <link rel="stylesheet" href="style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -29,24 +30,12 @@
         "email": "mailto:cheesbe@gmail.com"
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <img
-        src="img/avatar.png"
-        alt="Chia Yi Lai"
-        class="avatar"
-        loading="lazy"
-        width="300"
-        height="450"
-      />
+      <a href="#" id="avatar">
+        <img src="img/avatar.png" alt="Chia Yi Lai" loading="lazy" width="300" height="450" />
+      </a>
       <article>
         <header>
           <h1>
@@ -83,53 +72,44 @@
           <h3>作品</h3>
           <ul>
             <li>
-              <a href="https://chiayilai.github.io/diary/" target="_blank"
-                >Local Diary 本地日記</a
-              >
+              <a href="https://chiayilai.github.io/diary/" target="_blank">Local Diary 本地日記</a>
             </li>
             <li>
-              <a href="https://mooney.seesbee.com.tw/" target="_blank"
-                >Mooney 記帳</a
-              >
+              <a href="https://mooney.seesbee.com.tw/" target="_blank">Mooney 記帳</a>
             </li>
             <li>
-              <a href="https://chiayilai.github.io/mortgage/" target="_blank"
-                >Mortgage 房貸試算</a
-              >
+              <a href="https://chiayilai.github.io/mortgage/" target="_blank">Mortgage 房貸試算</a>
             </li>
             <li>
-              <a href="https://dribbble.com/ChiaYiLai" target="_blank"
-                >My Dribbble</a
-              >
+              <a href="https://dribbble.com/ChiaYiLai" target="_blank">My Dribbble</a>
             </li>
           </ul>
         </section>
 
         <footer>
-          <h3>聯絡方式</h3>
+          <h3>與我聯絡</h3>
           <ul>
             <li>
-              Email：<a href="mailto:cheesbe@gmail.com">cheesbe@gmail.com</a>
+              Email：
+              <a href="mailto:cheesbe@gmail.com">cheesbe@gmail.com</a>
             </li>
             <li>
-              LINE：<a href="https://lin.ee/I19f4eF"
-                ><img
+              LINE：
+              <a href="https://lin.ee/I19f4eF">
+                <img
                   src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"
                   alt="加入好友"
                   height="36"
                   border="0"
                   target="_blank"
                   class="btn-line"
-              /></a>
+                />
+              </a>
             </li>
           </ul>
         </footer>
       </article>
     </main>
-    <button type="button" id="btn-theme-toggle">
-      <span>Light</span>
-      <b>Dark</b>
-    </button>
     <script src="main.js"></script>
   </body>
 </html>
