@@ -74,6 +74,7 @@ main {
   padding: 0.5rem;
   background-color: #fff;
   box-shadow: var(--shadow);
+  border-radius: 2px;
   transition: 0.8s;
   position: relative;
   left: 0;
@@ -88,6 +89,7 @@ article {
   transition: 0.8s;
   position: relative;
   z-index: 2;
+  border-radius: 2px;
 }
 
 section {
