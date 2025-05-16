@@ -1,10 +1,12 @@
 :root {
   --size: 16px;
-  --red: 238, 68, 68;
+  --red: #e44;
   --gray: #666;
   --white: #fff;
+  --blue: #159;
   --color: var(--gray);
   --bg: #f9f8f4;
+  --main: var(--red);
 }
 
 ::selection {
@@ -13,9 +15,14 @@
 }
 
 [data-isdark='true'] {
-  --bg: #333;
+  --bg: var(--blue);
+  --main: var(--blue);
   @media (width < 1024px) {
     --color: var(--white);
+    --main: #fc4;
+    h1 {
+      font-size: 2rem;
+    }
   }
   @media (width >= 1024px) {
     #avatar {
@@ -85,6 +92,10 @@ section {
   margin-bottom: 3rem;
 }
 
+header {
+  text-align: center;
+}
+
 h1 {
   color: var(--color);
   font-size: 3rem;
@@ -110,15 +121,15 @@ h1 {
 h2 {
   display: inline-block;
   font-size: 1.1rem;
-  color: rgb(var(--red));
-  border: 1px solid rgba(var(--red), 0.5);
-  background-color: #fce9c9;
-  padding: 12px 48px;
+  color: var(--main);
+  border: 1px solid var(--main);
+  padding: 12px 36px;
+  margin: 0.5rem 0 2rem 0;
   border-radius: 100px;
 }
 
 h3 {
-  color: rgb(var(--red));
+  color: var(--main);
   font-size: 1.4rem;
   font-weight: normal;
   margin: 0.5rem 0 1rem;
@@ -129,7 +140,7 @@ a {
   transition: 0.4s;
   text-underline-offset: 6px;
   &:hover {
-    color: rgb(var(--red));
+    color: var(--main);
   }
 }
 
