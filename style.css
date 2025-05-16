@@ -45,7 +45,7 @@ html {
 
 body {
   margin: 0;
-  padding: 3rem 2rem 6rem;
+  padding: 2rem 2rem 6rem;
   font-family: 'Maven Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   color: var(--color);
@@ -63,7 +63,10 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 2rem;
+  @media (width >= 1024px) {
+    gap: 3rem;
+  }
 }
 
 #avatar {
