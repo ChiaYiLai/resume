@@ -2,7 +2,7 @@
   --size: 16px;
   --red: #e44;
   --gray: #666;
-  --white: #fff;
+  --dark-color: rgba(255, 255, 255, 0.85);
   --blue: #159;
   --yellow: #ffd54f;
   --color: var(--gray);
@@ -20,7 +20,7 @@
   --bg: var(--blue);
   --main: var(--blue);
   @media (width < 1024px) {
-    --color: var(--white);
+    --color: var(--dark-color);
     --main: var(--yellow);
   }
   @media (width >= 1024px) {
@@ -32,8 +32,9 @@
     }
     article {
       padding: 4rem;
-      background-color: #f4f4f4;
+      background-color: #ddd;
       box-shadow: var(--shadow);
+      max-width: 444px;
     }
   }
 }
